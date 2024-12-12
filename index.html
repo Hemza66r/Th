@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>منتج كلمات المرور</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Password Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Welcome/Login Screen -->
+  <div id="welcome-screen" class="centered">
+    <h1>Welcome Back!</h1>
+    <div id="login-form">
+      <h2>Log In</h2>
+      <div class="form-group">
+        <label for="login-username">Username:</label>
+        <input type="text" id="login-username" placeholder="Enter your username">
+      </div>
+      <div class="form-group">
+        <label for="login-password">Password:</label>
+        <input type="password" id="login-password" placeholder="Enter your password">
+      </div>
+      <button id="login-btn">Log In</button>
+      <p>Don't have an account? <span id="switch-to-register">Register here</span></p>
+    </div>
+    <div id="register-form" class="hidden">
+      <h2>Create Account</h2>
+      <div class="form-group">
+        <label for="register-username">Username:</label>
+        <input type="text" id="register-username" placeholder="Create a username">
+      </div>
+      <div class="form-group">
+        <label for="register-password">Password:</label>
+        <input type="password" id="register-password" placeholder="Create a password">
+      </div>
+      <button id="register-btn">Register</button>
+      <p>Already have an account? <span id="switch-to-login">Log in here</span></p>
+    </div>
+  </div>
+
+  <!-- Main App -->
+  <div id="main-app" class="hidden">
+    <div class="container">
+      <h1>Password Manager</h1>
+
+      <!-- Password Generator -->
+      <div class="form-group">
+        <label for="length">Password Length:</label>
+        <input type="number" id="length" value="12" min="4" max="20">
+      </div>
+      <div class="form-group">
+        <label>
+          <input type="checkbox" id="include-lowercase" checked> Lowercase Letters
+        </label>
+        <label>
+          <input type="checkbox" id="include-uppercase" checked> Uppercase Letters
+        </label>
+        <label>
+          <input type="checkbox" id="include-numbers" checked> Numbers
+        </label>
+        <label>
+          <input type="checkbox" id="include-symbols" checked> Symbols
+        </label>
+      </div>
+      <button id="generate-btn">Generate Password</button>
+
+      <!-- Display Generated Password -->
+      <div class="output">
+        <label for="password">Generated Password:</label>
+        <input type="text" id="password" readonly>
+        <button id="copy-btn">Copy</button>
+      </div>
+
+      <!-- Save Password with App Name -->
+      
+
+      <!-- Saved Passwords List -->
+      <h2>Saved Passwords</h2>
+      <ul id="password-list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
